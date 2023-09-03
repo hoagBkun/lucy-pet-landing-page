@@ -1,0 +1,35 @@
+.hero {
+    padding-top: 26px;
+}
+
+.hero-top {
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    padding: 0 18px;
+}
+
+.nav__link {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nav__link:hover {
+    color: #000958;
+    text-shadow: 0.4px 0.4px #000958, -0.4px -0.4px #000958;
+}
+
+.hero-action__btn {
+    height: 50px;
+    width: 117px;
+    border: 1px solid #000958;
+    color: #000958;
+    font-size: 1.4rem;
+}
