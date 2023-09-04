@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FF5B2E;
+    --primary-color: #ff5b2e;
     --text-primary-color: #656689;
 }
 
@@ -20,6 +20,15 @@ body {
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
 }
 
 .container {
@@ -46,10 +55,52 @@ a {
     border-radius: 999px;
     border: 1px solid currentColor;
     color: var(--primary-color);
-    background: #fff;
+    background: transparent;
 }
 
 .btn:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.section-heading {
+    color: #000958;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.section-desc {
+    margin-top: 24px;
+    color: var(--text-primary-color);
+    font-size: 1.6rem;
+    line-height: 1.87;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.dot--active {
+    width: 24px;
+    background: var(--primary-color);
+    border-radius: 999px;
+}
+
+.line-clamp {
+    --line-clamp: 2;
+
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
